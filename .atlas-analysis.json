@@ -1,0 +1,68 @@
+{
+  "projectType": "saas",
+  "projectName": "Pedal",
+  "projectDescription": "Pedal is a car rental web application that lets users browse vehicles by brand, select pickup/drop-off locations, and make reservations across multiple cities in Peru.",
+  "theme": "almond",
+  "primaryColor": "#323f54",
+  "lightColor": "#f5f7f2",
+  "darkColor": "#273852",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["introduction", "getting-started"]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/vehicle-catalog",
+              "features/booking",
+              "features/locations",
+              "features/user-reviews"
+            ]
+          },
+          {
+            "group": "Vehicle Fleet",
+            "pages": [
+              "fleet/overview",
+              "fleet/honda",
+              "fleet/chevrolet",
+              "fleet/volvo",
+              "fleet/mitsubishi",
+              "fleet/volkswagen"
+            ]
+          },
+          {
+            "group": "Help & Support",
+            "pages": [
+              "support/faq",
+              "support/contact",
+              "support/terms"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Vehicle catalog filterable by brand (Honda, Chevrolet, Volvo, Mitsubishi, Volkswagen)",
+    "Booking form with car type, date, pickup time, pickup location, return time, and return location",
+    "Interactive map showing service coverage across Peru (Lima, Ica, Arequipa, Ancash, Piura)",
+    "24/7 customer support and multiple strategic pickup/drop-off locations",
+    "Newsletter subscription for promotions and updates",
+    "Loading screen animation and responsive single-page design"
+  ],
+  "publicApiSurface": [
+    "GET #home — Hero section with booking form",
+    "GET #howDoesItWork — Step-by-step rental process guide",
+    "GET #topCars — Filterable vehicle catalog by brand",
+    "GET #service — Service features and value propositions",
+    "GET #contact — Newsletter subscription form",
+    "Brand filter: Honda, Chevrolet, Volvo, Mitsubishi, Volkswagen",
+    "Car types: Compacto, Sedán, SUV, Camioneta",
+    "Pickup/return locations: Miraflores, San Isidro, San Miguel"
+  ]
+}
