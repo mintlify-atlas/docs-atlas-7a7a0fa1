@@ -1,0 +1,78 @@
+---
+title: "Vehicle catalog"
+description: "Browse and filter the full Pedal fleet by brand. Each vehicle listing shows fuel type, seating, transmission, fuel efficiency, and daily price."
+---
+
+The vehicle catalog lets you explore every car available on Pedal. Vehicles are organized by brand, and a set of brand filter buttons at the top of the catalog lets you switch between them instantly.
+
+## Brand filter
+
+At the top of the catalog page, five brand buttons appear in a row:
+
+- **Honda**
+- **Chevrolet**
+- **Volvo**
+- **Mitsubishi**
+- **Volkswagen**
+
+Clicking a brand button shows only the vehicles for that brand and hides all others. Each car in the catalog carries a `data-brand` attribute that the filter reads to show or hide it.
+
+<Note>
+  Honda is the default brand displayed when the catalog first loads. All Honda vehicles are visible immediately without clicking any filter button.
+</Note>
+
+## Vehicle details
+
+Each vehicle card in the catalog displays the following information:
+
+- **Fuel type** — Petrol or Diesel, shown as a badge on the card.
+- **Seats** — The number of passenger seats available.
+- **Transmission** — Manual or Automatic.
+- **Fuel efficiency** — Kilometres per litre (Km/L).
+- **Daily price** — Rental cost in Peruvian soles (S/.) per day.
+- **Details button** — Opens the full vehicle description and specifications.
+- **Rent now button** — Takes you directly to the booking form for that vehicle. See [Booking a vehicle](/features/booking) for the full reservation flow.
+
+## Full fleet by brand
+
+<Tabs>
+  <Tab title="Honda">
+    | Model | Fuel | Seats | Transmission | Efficiency | Price/day |
+    |-------|------|-------|--------------|------------|-----------|
+    | Civic | Petrol | 5 | Automatic | 12 Km/L | S/. 800 |
+    | Accord | Petrol | 5 | Manual | 11 Km/L | S/. 900 |
+    | CR-V | Diesel | 5 | Automatic | 14 Km/L | S/. 950 |
+  </Tab>
+  <Tab title="Chevrolet">
+    | Model | Fuel | Seats | Transmission | Efficiency | Price/day |
+    |-------|------|-------|--------------|------------|-----------|
+    | Spark | Petrol | 4 | Manual | 16 Km/L | S/. 700 |
+    | Cruze | Petrol | 5 | Automatic | 13 Km/L | S/. 850 |
+    | Trailblazer | Diesel | 7 | Automatic | 10 Km/L | S/. 1,000 |
+  </Tab>
+  <Tab title="Volvo">
+    | Model | Fuel | Seats | Transmission | Efficiency | Price/day |
+    |-------|------|-------|--------------|------------|-----------|
+    | XC40 | Petrol | 5 | Automatic | 15 Km/L | S/. 1,200 |
+    | S60 | Petrol | 5 | Manual | 12 Km/L | S/. 1,100 |
+    | XC90 | Diesel | 7 | Automatic | 9 Km/L | S/. 1,500 |
+  </Tab>
+  <Tab title="Mitsubishi">
+    | Model | Fuel | Seats | Transmission | Efficiency | Price/day |
+    |-------|------|-------|--------------|------------|-----------|
+    | Mirage | Petrol | 5 | Manual | 17 Km/L | S/. 600 |
+    | Lancer | Petrol | 5 | Automatic | 12 Km/L | S/. 900 |
+    | Pajero | Diesel | 7 | Automatic | 10 Km/L | S/. 1,400 |
+  </Tab>
+  <Tab title="Volkswagen">
+    | Model | Fuel | Seats | Transmission | Efficiency | Price/day |
+    |-------|------|-------|--------------|------------|-----------|
+    | Polo | Petrol | 5 | Manual | 18 Km/L | S/. 700 |
+    | Passat | Diesel | 5 | Automatic | 14 Km/L | S/. 950 |
+    | Tiguan | Petrol | 7 | Automatic | 12 Km/L | S/. 1,200 |
+  </Tab>
+</Tabs>
+
+## Booking from the catalog
+
+Once you find a vehicle that fits your needs, click **Rent now** on the vehicle card. This takes you to the booking form where you can select your car type, date, pickup time, and return details. For a full walkthrough of the booking process, see [Booking a vehicle](/features/booking).

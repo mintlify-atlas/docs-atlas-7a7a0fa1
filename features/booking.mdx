@@ -1,0 +1,72 @@
+---
+title: "Booking a vehicle"
+description: "How to complete a vehicle reservation on Pedal, including all form fields and what each one does."
+---
+
+The booking form on Pedal collects everything needed to prepare your rental in one place. Fill in the fields below in order, then submit to confirm your reservation.
+
+## Booking process
+
+<Steps>
+  <Step title="Choose your car type">
+    Select the category of vehicle you want from the **Car type** dropdown. The available categories are Compacto, Sedán, SUV, and Camioneta. If you are coming from the vehicle catalog, the car type may already be pre-selected based on the vehicle you chose.
+  </Step>
+  <Step title="Set your pickup date">
+    Use the **Date of use** field to pick the calendar date when you plan to collect the car. The date must be today or a future date.
+  </Step>
+  <Step title="Set your pickup time and location">
+    Enter the **Pickup time** — the hour and minute at which you will arrive to collect the vehicle. Then choose your **Pickup location** from the available options: Miraflores, San Isidro, or San Miguel.
+  </Step>
+  <Step title="Set your return time and location">
+    Enter the **Return time** — when you plan to bring the car back. Then select your **Return location**. You can return the vehicle to a different location from where you picked it up.
+  </Step>
+  <Step title="Submit the form">
+    Review all the details, then click **Submit** to send your reservation request. Pedal's team will confirm your booking and prepare the vehicle at the selected location.
+  </Step>
+</Steps>
+
+## Form fields
+
+<ParamField query="tipo_carro" type="string" required>
+  The category of vehicle to rent. Select one of the following options:
+  - `Compacto` — Compact car, best for city driving.
+  - `Sedán` — Standard sedan, suited to longer trips.
+  - `SUV` — Sport utility vehicle, good for mixed terrain.
+  - `Camioneta` — Pickup truck, for cargo or off-road use.
+</ParamField>
+
+<ParamField query="fecha_uso" type="string" required>
+  The date on which the rental period begins. Uses a date input (`YYYY-MM-DD`). Must be a present or future date.
+</ParamField>
+
+<ParamField query="hora_recoger" type="string" required>
+  The time at which you will collect the vehicle at the pickup location. Uses a time input (`HH:MM`, 24-hour format).
+</ParamField>
+
+<ParamField query="lugar_recoger" type="string" required>
+  The pickup location. Select one of:
+  - `Miraflores`
+  - `San Isidro`
+  - `San Miguel`
+</ParamField>
+
+<ParamField query="hora_devolver" type="string" required>
+  The time at which you will return the vehicle to the return location. Uses a time input (`HH:MM`, 24-hour format).
+</ParamField>
+
+<ParamField query="lugar_devolver" type="string" required>
+  The return location. Select one of:
+  - `Miraflores`
+  - `San Isidro`
+  - `San Miguel`
+
+  This can be the same location as the pickup or a different one.
+</ParamField>
+
+<Warning>
+  Make sure the return time is set after the pickup time. If your rental spans multiple days, confirm the date and time combination carefully. Submitting a return time earlier than your pickup time may result in an invalid reservation.
+</Warning>
+
+<Tip>
+  Pedal offers flexible scheduling — you can pick up and return your vehicle at different locations. If your travel plans change, contact the support team at serviciopedal@pedal.pe or call (511) 204 4400 as early as possible to adjust your booking.
+</Tip>
